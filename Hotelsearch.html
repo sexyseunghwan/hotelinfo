@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=360, height=740, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../css/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <title>HotelSearch</title>
+    <style>
+        /* 전체 css 컨트롤 */
+
+        /* 넥슨 글씨체 */
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*62570체  */
+        @font-face { font-family: '62570체'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/62570체.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 상단쪽 -->
+    <h1 id="title">Hotel Info</h1>
+
+    <table id="hotelinfo">
+        <tr>
+            <th>name</th>
+            <th>info</th>
+            <th>location</th>
+            <th>price</th>
+            <th>detail</th>
+        </tr>
+        <tr>
+            <td>jk blossom</td>
+            <td>3성급,스파가능,한강뷰,스타일러,루프탑</td>
+            <td><a href="https://map.naver.com/v5/entry/place/1123199555?c=14122369.1925125,4517078.4333838,15,0,0,2,dh">서울 강서구 양천로65길 41-22</a></td>
+            <td>120,000</td>
+            <td><a href="https://blog.naver.com/hnk426/222077217161">more detail</a></td>
+        </tr>
+        <tr>
+            <td>나인트리 호텔 동대문</td>
+            <td>4성급,탁트인 조망,가성비</td>
+            <td><a href="https://map.naver.com/v5/search/%EB%82%98%EC%9D%B8%ED%8A%B8%EB%A6%AC%ED%98%B8%ED%85%94%EB%8F%99%EB%8C%80%EB%AC%B8/place/1668782419?c=14136949.5556579,4518471.0204929,15,0,0,2,dh">서울 중구 을지로 224</a></td>
+            <td>70,000</td>
+            <td><a href="https://blog.naver.com/hip876/221834159577">more detail</a></td>
+        </tr>
+        <tr>
+            <td>강남L7호텔</td>
+            <td>4성급,접근성</td>
+            <td><a href="https://map.naver.com/v5/search/%EA%B0%95%EB%82%A8L7%ED%98%B8%ED%85%94/place/1536938247?c=14142859.0934072,4509831.2476395,15,0,0,2,dh&placePath=%3F%2526">서울 강남구 테헤란로 415</a></td>
+            <td>105,000</td>
+            <td><a href="https://blog.naver.com/bluerose0328/221989214226">more detail</a></td>
+        </tr>
+        <tr>
+            <td>파티오세븐</td>
+            <td>3성급,인스타 감성,독특한 침대,라운지</td>
+            <td><a href="https://map.naver.com/v5/search/%ED%8C%8C%ED%8B%B0%EC%98%A4%EC%84%B8%EB%B8%90%ED%98%B8%ED%85%94/place/1260749795?c=14139882.8266183,4511615.5745185,15,0,0,2,dh">서울 강남구 논현로 736</a></td>
+            <td>90,000</td>
+            <td><a href="https://blog.naver.com/opqw135/221556141186">more detail</a></td>
+        </tr>
+        <tr>
+            <td>호텔인9</td>
+            <td>4성급,시티뷰,접근성</td>
+            <td><a href="https://map.naver.com/v5/entry/place/1245880236?c=14143771.5604323,4511302.6604340,15,0,0,2,dh">서울 강남구 영동대로 618 Hotel in 9</a></td>
+            <td>84,000</td>
+            <td><a href="https://blog.naver.com/bella8392/221719303561">more detail</a></td>
+        </tr>
+        <tr>
+            <td>더스테이트 선유</td>
+            <td>4성급,욕조,합리적인 룸서비스</td>
+            <td><a href="https://map.naver.com/v5/entry/place/1394755905?c=14125221.2491304,4514522.5702505,15,0,0,2,dh">서울 영등포구 양평로 132</a></td>
+            <td>90,000</td>
+            <td><a href="https://blog.naver.com/o_julia/222041421644">more detail</a></td>
+        </tr>
+    </table>
+
+    <style>
+        #title {
+            /* border: 1px solid red; */
+            font-family: '62570체';
+            width:220px;
+            margin: 20px auto;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        #hotelinfo {
+            border: 1px solid black;
+            margin: 20px auto;
+            /* width : 1000px; */
+        }
+        #hotelinfo  th {
+            text-align: center;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            height: 40px;
+            font-family: '62570체';
+            font-size: 1.3em;
+        }
+        #hotelinfo  th:nth-child(1) {
+            width: 230px;
+        }
+        #hotelinfo  th:nth-child(2) {
+            width: 500px;
+        }
+        #hotelinfo  th:nth-child(3) {
+            width: 400px;
+        }
+        #hotelinfo  th:nth-child(4) {
+            width: 120px;
+        }
+        #hotelinfo  th:nth-child(5) {
+            width: 130px;
+        }
+
+        #hotelinfo  td {
+            border: 1px solid black;
+            height: 60px;
+            text-align: center;
+        }
+
+        #hotelinfo td:nth-child(1) {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            font-weight: bolder;
+        }
+        
+    </style>
+
+    
+
+</body>
+</html>
